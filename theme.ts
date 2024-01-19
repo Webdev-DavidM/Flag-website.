@@ -1,7 +1,107 @@
 'use client';
 
-import { createTheme } from '@mantine/core';
+import { createTheme, rem } from '@mantine/core';
 
 export const theme = createTheme({
-  /* Put your mantine theme override here */
+  primaryColor: 'dark-blue-dark-mode-elements',
+  colors: {
+    'dark-blue-dark-mode-elements': [
+      '#f2f5f7',
+      '#e6e7e8',
+      '#c8cdd1',
+      '#a8b2bb',
+      '#8c9ba8',
+      '#7b8d9c',
+      '#718599',
+      '#5f7385',
+      '#526677',
+      '#43586b',
+    ],
+    'very-dark-blue-background-dark-mode': [
+      '#f2f5f7',
+      '#e5e7e9',
+      '#c7cdd2',
+      '#a5b2bd',
+      '#899aab',
+      '#778ca0',
+      '#6d859d',
+      '#5b7288',
+      '#4f657a',
+      '#40586e',
+    ],
+    'very-dark-blue-text-light-mode': [
+      '#f3f5f6',
+      '#e7e7e7',
+      '#cecece',
+      '#b0b4b6',
+      '#969da1',
+      '#858f94',
+      '#7c8890',
+      '#69767c',
+      '#5c6970',
+      '#4a5b64',
+    ],
+    'dark-gray-light-mode-inputs': [
+      '#fff2f5',
+      '#ece6e7',
+      '#cfcdcd',
+      '#b2b2b2',
+      '#9a9a9a',
+      '#8b8b8b',
+      '#848484',
+      '#737171',
+      '#686465',
+      '#5f5457',
+    ],
+    'very-light-gray-light-mode-background': [
+      '#f5f5f5',
+      '#e7e7e7',
+      '#cdcdcd',
+      '#b2b2b2',
+      '#9a9a9a',
+      '#8b8b8b',
+      '#848484',
+      '#717171',
+      '#656565',
+      '#575757',
+    ],
+    'white-dark-mode-text-light-mode-elements': [
+      '#f5f5f5',
+      '#e7e7e7',
+      '#cdcdcd',
+      '#b2b2b2',
+      '#9a9a9a',
+      '#8b8b8b',
+      '#848484',
+      '#717171',
+      '#656565',
+      '#575757',
+    ],
+  },
+  shadows: {
+    md: '1px 1px 3px rgba(0, 0, 0, .25)',
+    xl: '5px 5px 3px rgba(0, 0, 0, .25)',
+  },
+  defaultGradient: {
+    from: 'blue',
+    to: 'yellow',
+    deg: 45,
+  },
+
+  fontFamily: 'Nunito Sans, sans-serif',
+  fontSizes: {
+    xs: rem(12),
+    sm: rem(14),
+    md: rem(16),
+    lg: rem(18),
+    xl: rem(20),
+  },
+
+  headings: {
+    // fontFamily: 'Nunito Sans, sans-serif',
+    fontFamily: 'Noto Sans, sans-serif',
+    sizes: {
+      h1: { fontSize: rem(36) },
+    },
+  },
 });
